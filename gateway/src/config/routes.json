@@ -1,0 +1,16 @@
+[
+  {
+    "name": "user-service",
+    "prefix": "/api/users",
+    "upstream": "http://user-service:3001",
+    "authRequired": true,
+    "rateLimit": 30
+  },
+  {
+    "name": "product-service",
+    "prefix": "/api/products",
+    "upstream": "http://product-service:3002",
+    "authRequired": false,
+    "rateLimit": 60
+  }
+]
